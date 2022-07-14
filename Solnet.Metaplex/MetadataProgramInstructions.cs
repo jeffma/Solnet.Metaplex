@@ -23,7 +23,29 @@ namespace Solnet.Metaplex
             { Values.MintNewEditionFromMasterEditionViaToken, "Mint new Edition from MasterEdition via token" },
             { Values.ConvertMasterEditionV1ToV2, "Convert Master Edition from V1 to V2" },
             { Values.MintNewEditionFromMasterEditionViaVaultProxy, "Mint new Edition from MasterEdition via VaultProxy" },
-            { Values.PuffMetadata, "Puff metadata" }
+            { Values.PuffMetadata, "Puff metadata" },
+            { Values.UpdateMetadataAccountV2, "Update a Metadata with is_mutable as a parameter" },
+            { Values.CreateMetadataAccountV2, "Create V2 MetadataAccount." },
+            { Values.CreateMasterEditionV3, "Register a Metadata as a Master Edition V3" },
+            { Values.VerifyCollection, "Verify the NFT Belongs in the Collection." },
+            { Values.Utilize, "Utilize an NFT" },
+            { Values.ApproveUseAuthority , "Approve another account to call [utilize] on this NFT." },
+            { Values.RevokeUseAuthority, "Revoke account to call [utilize] on this NFT." },
+            { Values.UnverifyCollection, "Unverify an NFT in a collection." },
+            { Values.ApproveCollectionAuthority , "Approve another account to verify NFTs belonging to a collection." },
+            { Values.RevokeCollectionAuthority, "Revoke account to call [verify_collection] on this NFT." },
+            { Values.SetAndVerifyCollection , "perform [update_metadata_accounts_v2] and [verify_collection] in one instruction." },
+            { Values.FreezeDelegatedAccount, "Allow freezing of an NFT if this user is the delegate of the NFT." },
+            { Values.ThawDelegatedAccount , "Allow thawing of an NFT if this user is the delegate of the NFT." },
+            { Values.RemoveCreatorVerification, "Remove Creator Verificaton." },
+            { Values.BurnNft, "Completely burn a NFT, including closing the metadata account." },
+            { Values.VerifySizedCollectionItem, "Verify Collection V2, new in v1.3--supports Collection Details." },
+            { Values.UnverifySizedCollectionItem, "Unverify Collection V2, new in v1.3--supports Collection Details." },
+            { Values.SetAndVerifySizedCollectionItem, "Set And Verify V2, new in v1.3--supports Collection Details." },
+            { Values.CreateMetadataAccountV3, "Create Metadata V3 object." },
+            { Values.SetCollectionSize, "Set size of an existing collection." },
+            { Values.SetTokenStandard, "Set the token standard of the asset." }
+
         };
 
         /// <summary>
@@ -103,8 +125,91 @@ namespace Solnet.Metaplex
             /// <summary>
             /// 
             /// </summary>
-            PuffMetadata = 14
-
+            PuffMetadata = 14,
+            /// <summary>
+            /// 
+            /// </summary>
+            UpdateMetadataAccountV2 = 15,
+            /// <summary>
+            /// 
+            /// </summary>
+            CreateMetadataAccountV2 = 16,
+            /// <summary>
+            /// 
+            /// </summary>
+            CreateMasterEditionV3 = 17,
+            /// <summary>
+            /// 
+            /// </summary>
+            VerifyCollection = 18,
+            /// <summary>
+            /// 
+            /// </summary>
+            Utilize = 19,
+            /// <summary>
+            /// 
+            /// </summary>
+            ApproveUseAuthority = 20,
+            /// <summary>
+            /// 
+            /// </summary>
+            RevokeUseAuthority = 21,
+            /// <summary>
+            /// 
+            /// </summary>
+            UnverifyCollection = 22,
+            /// <summary>
+            /// 
+            /// </summary>
+            ApproveCollectionAuthority = 23,
+            /// <summary>
+            /// 
+            /// </summary>
+            RevokeCollectionAuthority = 24,
+            /// <summary>
+            /// 
+            /// </summary>
+            SetAndVerifyCollection = 25,
+            /// <summary>
+            /// 
+            /// </summary>
+            FreezeDelegatedAccount = 26,
+            /// <summary>
+            /// 
+            /// </summary>
+            ThawDelegatedAccount = 27,
+            /// <summary>
+            /// 
+            /// </summary>
+            RemoveCreatorVerification = 28,
+            /// <summary>
+            /// 
+            /// </summary>
+            BurnNft = 29,
+            /// <summary>
+            /// 
+            /// </summary>
+            VerifySizedCollectionItem = 30,
+            /// <summary>
+            /// 
+            /// </summary>
+            UnverifySizedCollectionItem = 31,
+            /// <summary>
+            /// 
+            /// </summary>
+            SetAndVerifySizedCollectionItem = 32,
+            /// <summary>
+            /// 
+            /// </summary>
+            CreateMetadataAccountV3 = 33,
+            /// <summary>
+            /// 
+            /// </summary>
+            SetCollectionSize = 34,
+            /// <summary>
+            /// 
+            /// </summary>
+            SetTokenStandard = 35
         }
     }
 }
